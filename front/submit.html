@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>註冊頁面</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+        <script src="/js/request.js" defer></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+      <div class="container" id="box">
+
+        <h1>註冊</h1>
+        
+        <div class="input-box">
+            <input type="text" placeholder="Username" id="userName" v-model="userName" required>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" id="passWord" v-model="passWord" required>
+            <i class="fa-solid fa-key"></i>
+        </div>
+        <button class="btn" @click="sendServlet">送出</button>
+
+        <div class="register">
+            <p>已經有帳戶了嗎?<a href="/backend/login.html">點我返回</a></p>
+        </div>
+
+    </div>
+      <!--
+        onclick="saveCookie()"
+        <div class="box" id="box">
+              <div class="form">
+                <h2>建立您的帳戶</h2>
+                <div class="inputBox">
+                  <input type="text" v-model="userName" required="required">
+                  <span>Username</span>
+                  <i></i>
+                </div>
+                <div class="inputBox">
+                  <input type="password" v-model="passWord" required="required">
+                  <span>Password</span>
+                  <i></i>
+                </div>
+                <br>
+                <button type="button" @click="sendServlet">送出</button>
+              </div>
+          </div>
+      -->
+        
+      <!--
+        <div class="box">
+        <div class="form">
+            <h2>建立您的帳戶</h2>
+            <div class="inputBox">
+                <input type="text" id="username" name="username" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" name="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <br>
+            <button type="button" onclick="sendServlet()">送出</button>
+        </div>
+    </div>
+      -->         
+    </body>
+</html>

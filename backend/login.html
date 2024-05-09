@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>登入介面</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--引入Vue.js-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js" defer></script>
+        <!--引入Axios-->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+        <script src="/js/login.js" defer></script>
+        <script src="/js/cookie.js" defer></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+<body>
+    <div class="container" id="box">
+
+        <h1>登入</h1>
+        
+        <div class="input-box">
+            <input type="text" placeholder="Username" id="userName" v-model="userName" required>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" id="passWord" v-model="passWord" required>
+            <i class="fa-solid fa-key"></i>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="checkbox" id="rememberCheck" onclick="saveCookie()">記住我</label>
+            <a href="#">忘記密碼?</a>
+        </div>
+
+        <button class="btn" @click="login">送出</button>
+
+        <div class="register">
+            <p>還沒申請帳戶嗎?<a href="/front/submit.html">點我註冊</a></p>
+        </div>
+
+    </div>
+    <!--
+        <div class="box" id="box">
+        <div class="form">
+            <h2>Welcome back</h2>
+            <div class="inputBox">
+                <input type="text" v-model="userName" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" v-model="passWord" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="link">
+                <a href="#">忘記密碼?</a>
+                <a href="/front/submit.html">註冊</a>
+            </div>
+            <button type="button" @click="login">登入</button>
+        </div>
+    </div>
+    -->
+</body>
+</html>    

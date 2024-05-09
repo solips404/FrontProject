@@ -1,0 +1,49 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23242a;
+    background-image: url("/images/SnowDay.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.circle-icon {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+}
+#avatarContainer {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 4px solid rgba(241, 241, 241, 0.484);
+    background-size: contain;
+    margin-bottom: 35px;
+    margin-left: 35px;
+}
+#avatarIcon {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight:bold;
+    color: rgba(255, 255, 255, 0.396);
+}
+#avatarInput {
+    display: none;
+}
